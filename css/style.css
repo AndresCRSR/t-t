@@ -79,3 +79,33 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
 }
+
+
+
+/* Estilo para la información extra */
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Estilo para mostrar toda la información al pasar el puntero */
+.card:hover .card-text {
+    overflow: visible;
+    white-space: normal;
+}
+
+/* Ajustar el tamaño de la imagen */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Espacio entre las cards */
+.card {
+    margin-bottom: 20px; /* Espacio entre las cards */
+}
+
+
+
+
