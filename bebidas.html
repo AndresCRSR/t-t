@@ -17,16 +17,21 @@
           .then(html => {
             document.getElementById('header').innerHTML = html;
           });
-      </script>
+    </script>
+    <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(html => {
+            document.getElementById('footer').innerHTML = html;
+          });
+    </script>
 
 </head>
-<body>
+<body class="body">
     <div id="header"></div>
 
-    <div class="d-flex justify-content-center align-items-center vh-80" style="margin-bottom: 20px; object-fit: cover;" >
-        <div class="mt-4 p-5" style="width: 85%; border-radius: 20px; background-color: black; object-fit: cover;">
-            <img class="imagenbanner" src="img/Bebidasbanner.jpg" height="50%" alt="">
-        </div>
+    <div class="d-flex justify-content-center align-items-center" style="margin-bottom: 20px; background-color: aqua;" >        
+            <img class="imagenbanner d-flex" src="img/Bebidasbanner.jpg" height="100%" alt="">
     </div>
 
     <div class="container">
@@ -98,9 +103,7 @@
     </div>
             
 
-    <footer>
-        <iframe src="footer.html" frameborder="0" width="100%"></iframe>
-    </footer>
+    <div id="footer"></div>
 
 </body>
 </html>

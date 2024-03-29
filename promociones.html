@@ -19,9 +19,16 @@
             document.getElementById('header').innerHTML = html;
           });
       </script>
+      <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(html => {
+            document.getElementById('footer').innerHTML = html;
+          });
+      </script>
 </head>
 
-<body>
+<body class="body">
     <div id="header"></div>
 
     <div id="header"></div>
@@ -95,10 +102,7 @@
             <!-- Repite este bloque para agregar más cards -->
         </div>
     </div>
-
-    <footer>
-        <iframe src="footer.html" frameborder="0" width="100%"></iframe>
-    </footer>
+    <div id="footer"></div>
 
 </body>
 </html>

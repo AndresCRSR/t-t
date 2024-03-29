@@ -133,6 +133,25 @@ header {
     color:darkgrey;
     border-radius: 10px;
 }
+/* Estilo inicial del dropdown */
+.dropdown-menu {
+    background-color: black; /* Fondo negro */
+    color: white; /* Letras blancas */
+}
+
+/* Estilo al pasar el mouse sobre las opciones del dropdown */
+.dropdown-item:hover {
+    background-color: white !important; /* Fondo blanco */
+    color: black !important; /* Letras negras */
+}
+
+/* Estilo del enlace "Nuestro menú" al hacer clic */
+.dropdown-toggle:focus {
+    background-color: black !important; /* Fondo negro */
+    color: white !important; /* Letras blancas */
+}
+
+
 
 
 
