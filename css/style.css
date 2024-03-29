@@ -152,7 +152,7 @@ header {
 }
 
 .fondocards{
-    background-color: rgb(116, 3, 3);
+    background-color: rgb(122, 3, 3);
     color: white;
     opacity: 1.0;
     border-radius: 10px;
@@ -161,9 +161,7 @@ header {
 .textocards{
     color: white;
 }
-.card{
-    background-color: black;
-}
+
 
 
 
