@@ -19,17 +19,23 @@
             document.getElementById('header').innerHTML = html;
           });
       </script>
+      <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(html => {
+            document.getElementById('footer').innerHTML = html;
+          });
+      </script>
 
 </head>
-<body>
+<body class="body">
     
 
     <div id="header"></div>
 
-    <div class="d-flex justify-content-center align-items-center vh-80" style="margin-bottom: 20px;">
-        <div class="mt-4 p-5 bg-secondary text-white rounded" style="width: 85%;">
-            <h1 style="text-align: center;">Aqui va un baner bonis</h1>
-            <p style="text-align: center;">Lorem ipsum...</p>
+    <div class="d-flex justify-content-center align-items-center vh-80" style="margin-bottom: 20px; object-fit: cover;" >
+        <div class="mt-4 p-5" style="width: 85%; border-radius: 20px; background-color: black; object-fit: cover;">
+            <img class="imagenbanner" src="img/pizzasbanner.JPG" height="50%" alt="">
         </div>
     </div>
 
@@ -97,9 +103,7 @@
     </div>
             
 
-    <footer>
-        <iframe src="footer.html" frameborder="0" width="100%"></iframe>
-    </footer>
+    <div id="footer"></div>
 
 </body>
 </html>
